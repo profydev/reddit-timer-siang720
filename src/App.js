@@ -1,11 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      App Placeholder
-    </div>
-  );
-}
+import Navbar from './navbar';
+import Main from './main';
+import Footer from './footer';
+
+const App = () => (
+    <Router className="App">
+        <Navbar />
+        <Main />
+        <Footer />
+    </Router>
+);
 
 export default App;
