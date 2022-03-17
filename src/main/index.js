@@ -1,17 +1,15 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Search from './search';
 
 const Main = () => (
     <div className="Main text-center">
-        <Switch>
+        <Routes>
             <Route path="/">
                 Homepage Content
             </Route>
-            <Route path="/search">
-                <Search />
-            </Route>
-        </Switch>
+            <Route path="/search" element={<Search />} />
+        </Routes>
     </div>
 );
 
